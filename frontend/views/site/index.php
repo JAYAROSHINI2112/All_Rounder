@@ -2,17 +2,18 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'All Rounder';
 ?>
 
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>All Rounder!</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead">“Learn from the mistakes of others. You can’t live long enough to make them all yourself.”</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">House Hold</a>
+        <a class="btn btn-lg btn-primary" href="http://www.yiiframework.com">Work Place</a></p>
     </div>
 
     <div class="body-content">
