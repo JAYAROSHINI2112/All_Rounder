@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use common\models\Account;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,8 +21,19 @@ class AccountController extends Controller
     public function behaviors()
     {
         return [
+            [
+                'class' => AccessControl::class,
+                'only' => ['create', 'update', 'delete', 'view', 'index'],
+                'rules' => [
+                    [
+                        'actions' => ['create', 'update', 'delete', 'view', 'index'],
+                        'allow' => true,
+                        'roles' => ['@']
+                    ]
+                ]
+            ],
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'delete' => ['POST'],
                 ],
@@ -35,12 +47,17 @@ class AccountController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Account::find(),
-        ]);
+        $id=Yii::$app->user->id;
+        // $dataProvider = new ActiveDataProvider([
+        //     'query' => Account::find()->where(['id'=>$id]),
+        // ]);
+
+        // return $this->render('index', [
+        //     'dataProvider' => $dataProvider,
+        // ]);
 
         return $this->render('index', [
-            'dataProvider' => $dataProvider,
+            'model' => $this->findModel($id),
         ]);
     }
 

@@ -7,49 +7,45 @@ $this->title = 'All Rounder';
 
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>All Rounder!</h1>
+<div class="jumbotron">
+<h1>All Rounder!</h1>
+<main class="row wrap">
+<div class="card" style="width: 18rem;">
+  <img src="images/home.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Home</h5>
+    <p class="card-text">Some quick exampe text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/workplace.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Work Place</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
-        <p class="lead">“Learn from the mistakes of others. You can’t live long enough to make them all yourself.”</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">House Hold</a>
-        <a class="btn btn-lg btn-primary" href="http://www.yiiframework.com">Work Place</a></p>
-    </div>
+<div class="card" style="width: 18rem;">
+  <img src="images/personal.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Personal</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
-    <div class="body-content">
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
+<div class="card" style="width: 18rem;">
+  <img src="images/others.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Others</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</main>
 </div>
