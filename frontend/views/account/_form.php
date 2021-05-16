@@ -10,9 +10,17 @@ use yii\widgets\ActiveForm;
 
 <div class="account-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+<?php $form = ActiveForm::begin([
+    'options' => [
+        'enctype' => 'multipart/form-data'
+    ],
+    'id' => 'profilepic-form'
+]); ?>
+
 
     <?= $form->field($model, 'fullname')->textInput(['maxlength' => true]) ?>
+    
+    <?= $form->field($model, 'profileimg')->fileInput()?>
 
     <?= $form->field($model, 'phoneno')->textInput() ?>
 

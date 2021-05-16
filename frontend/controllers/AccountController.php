@@ -9,7 +9,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\UploadedFile;
 /**
  * AccountController implements the CRUD actions for Account model.
  */
@@ -83,10 +83,11 @@ class AccountController extends Controller
     {
         $model = new Account();
 
+        $model->profileimg = UploadedFile::getInstanceByName('image');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
-
+       
         return $this->render('create', [
             'model' => $model,
         ]);
